@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Josefin Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;/* to make the header fixed while scroling*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ; /*padding top and bottom 10 ,padding left and right 200*/
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color:#562B08;
+}
+header h1{
+    
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+}
+header .icons a{
+    font-size: 2rem;
+    color: black;
+    margin-left: 1.8rem;
+    
+}
+
+header .icons a:hover{
+    color: #562B08;
+}
+#home{
+ background:url(images/pexels-technobulka-2908976.jpg);
+ background-size: cover;
+ background-position: center;
+ height: 100vh;   
+}
+.home-txt{
+    text-align:center;
+    padding-left: 50px;
+    color:white;
+    padding-top: 350px;
+
+}
+.home-txt h1{
+    font-size: 160px;
+
+}
+.home-txt p{
+    font-size: 40px;
+    
+
+}
+.home-button{
+    margin: 70px auto 0;
+    
+        
+
+
+}
+.home-button a{
+    width: 250px;
+    height: 70px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 25px;
+    padding: 15px 0;
+    color: white;
+    border: 3px solid white;
+    position: relative;
+    z-index: 1;
+    transition:  color 0.5s;
+    font-size: 2em;
+
+}
+.home-button a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#F9FBE7;
+    z-index:-1 ;
+    transition: 0.5s;
+
+}
+.home-button a:hover span{
+width: 100%;
+
+}
+.home-button a:hover{
+    color: #000;
+}
+@media screen  and (max-width:770px){
+    .home-txt h1{
+        font-size: 50px;
+
+    }
+    .home-button a{
+        display: block;
+        margin: 20px auto;
+    }
+    .About{
+        flex-basis: 100%;
+    }
+    .about-img{
+        flex-basis: 100%;
+
+    }
+    .about-img img{
+        width: 100%;
+    }
+}
+#about{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-txt{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-txt h1{
+    font-size:55px;
+    color: #000;
+}
+.about-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.About{
+    flex-basis: 50%;
+    margin-bottom:180px;
+    padding-left: 60px;
+    
+}
+.about-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.about-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.About h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 45px;
+    color: #000;
+
+}
+.about-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+.about-txt p{
+    padding-top: 30px;
+    padding: 0 20px;
+    text-align: initial;
+    font-size: 27px;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 80px;
+    padding-left: 80px;
+
+}
+.footer .box-container .box{
+    flex:1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #000;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover {
+    color: #562B08;
+    text-decoration:underline;
+
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #000;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+

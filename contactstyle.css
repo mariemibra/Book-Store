@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Josefin Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;/* to make the header fixed while scroling*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ; /*padding top and bottom 10 ,padding left and right 200*/
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color:#562B08;
+}
+header h1{
+    
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+}
+header .icons a{
+    font-size: 2rem;
+    color: black;
+    margin-left: 1.8rem;
+    
+}
+
+header .icons a:hover{
+    color: #562B08;
+}
+.heading{
+    text-align: center;
+    padding-top:120px;
+    font-size:60px;
+    color: #000;
+
+
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact .row form{
+    flex:1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+ 
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: black;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+.contact .row form .box:focus{
+   border-color: #562B08;
+}
+.contact .row form textarea{
+height: 15rem;
+resize: none;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: black;
+    color: #fff;
+    padding:.9rem 3.5rem ;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: #562B08;
+}
+.footer .box-container{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.rem;
+    padding-left: 80px;
+
+}
+.footer .box-container .box{
+    flex:1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #000;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover {
+    color: #562B08;
+    text-decoration:underline;
+
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #000;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+

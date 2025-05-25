@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Josefin Sans"    ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;/* to make the header fixed while scroling*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ; /*padding top and bottom 10 ,padding left and right 200*/
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color:#562B08;
+}
+header h1{
+    
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+}
+header .icons a{
+    font-size: 2rem;
+    color: black;
+    margin-left: 1.8rem;
+    
+}
+
+header .icons a:hover{
+    color: #562B08;
+}
+.heading{
+    text-align: center;
+    padding-top:120px;
+    font-size:60px;
+    color: #000;
+
+
+}
+.books .box-container{
+    display: flex;
+    gap:6rem;
+    flex-wrap: wrap;
+
+}
+.books .box-container .box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .5rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+.books .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.books .box-container .box .image img{
+height: 25rem;
+
+
+}
+.books .box-container .box:hover .image img{
+    transform: scale(1.1);
+    
+    
+    }
+.books .box-container .box .image .icons{
+position: absolute;
+bottom: -7rem;left: 0;right: 0;
+display: flex;
+
+}   
+.books .box-container .box .image .icons a{
+ height:5 rem;
+ line-height: 5rem;
+ font-size: 2rem;
+ width: 50%;
+ background: #432818;
+ color:white;
+}
+.books .box-container .box:hover .image .icons {
+bottom: 0;
+}
+
+.books .box-container .box .image .icons .cart-btn{
+     border-left: .1rem #fff7;
+     border-right: .1rem #fff7;
+     width: 100%;
+     
+}
+.books .box-container .box .image .icons a:hover{
+background: #333;
+}
+.books .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.books .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:black;
+}
+.books .box-container .box .content .price{
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bolder;
+    padding-top: 1rem;
+    
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 80px;
+    padding-left: 80px;
+
+
+}
+.footer .box-container .box{
+    flex:1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #000;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover {
+    color: #562B08;
+    text-decoration:underline;
+
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #000;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+
+
+
+
+
+
+
+
